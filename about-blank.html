@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<h1>about:blank cloner</h1>
+<button onclick="openGame()">Open Zombs about:blank</button>
+<style>
+h1 {
+  color:red;
+}
+button {
+  color:green;
+}
+body{
+  background-color:blue;
+}
+</style>
+<script>
+function openGame() {
+var win = window.open()
+var url = "https://zombsroyale.io/"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+</script>
+</body>
+</html>
